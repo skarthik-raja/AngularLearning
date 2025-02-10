@@ -10,5 +10,21 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name = 'Kanini';
+  // name = 'Kanini';
+  // getName(){
+  //   return "Software Solutions";
+  // }
+
+
+  // property binding
+
+
+  // imageUrl = 'https://picsum.photos/200/300';
+  // imageAlt = 'Random Image';
+
+  clickcount = 0;
+
+  clickme(){
+    this.clickcount++;
+  }
 } 

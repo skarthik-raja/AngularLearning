@@ -13,8 +13,40 @@
 <!-- <img [src]="imageUrl" alt=" This is image {{imageAlt}}"> -->
 
 <!-- Event binding -->
-
+<!-- 
 <h1> The click count is initally {{clickcount}}</h1>
 
-<button (click) ="clickme()">Cick Me!</button>
+<button (click) ="clickme()">Cick Me!</button> -->
+
+<!--Date pipes -->
+<!-- <p><strong>unformatted Date</strong> : {{toDate}}</p>
+    <p><strong> formatted date </strong>: {{toDate|date}}</p>
+    <p><strong> Medium date </strong>: {{toDate|date:'medium'}}</p>
+    <p><strong> short date </strong>: {{toDate|date:'short'}}</p>
+    <p><strong> Full date </strong>: {{toDate|date:'fullDate'}}</p>
+    <p><strong> Long date </strong>: {{toDate|date:'longDate'}}</p> -->
+
+<!--Slice pipes-->
+
+<h1>Default text :{{title}}</h1>
+<!-- <p>Slice text is : {{title|slice:0:5}}</p> -->
+
+<!-- <p> Slice the items :{{Items|slice:0:3}}</p> -->
+
+<!-- <h2>Items List</h2>
+<ul>
+    <li *ngFor="let item of Items|slice:0:3">{{item}}</li>
+</ul>
+ -->
+
+ <p>the uppercase text is :{{title|uppercase}}</p>
+ <p> The Lowercase text is :{{title|lowercase}}</p>
+
+ <p>without formatting price :{{price}}</p>
+ <p>currency formatting price :{{price|currency}}</p>
+ <p>Indian curreny :{{price|currency:''}}</p>
+
+
+
+
 
